@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 
 
 
@@ -31,9 +32,9 @@ public class EmpresaEntity implements Serializable{
 	private String email;
 	
 
-	@OneToMany (mappedBy = "Empresa", cascade = CascadeType.ALL)
-	private List<NoticiaEntity> noticias = new ArrayList();
-	//private Noticias noticias;
+	@OneToOne (cascade = CascadeType.ALL)
+	//private List<NoticiaEntity> noticias = new ArrayList();
+	private NoticiaEntity noticias;
 
 
 	public EmpresaEntity() {
@@ -53,7 +54,7 @@ public class EmpresaEntity implements Serializable{
 		this.longitud = longitud;
 		this.domicilio = domicilio;
 		this.email = email;
-		this.noticias = noticias;
+		//this.noticias = noticias;
 	}
 
 
@@ -147,14 +148,14 @@ public class EmpresaEntity implements Serializable{
 	}
 
 
-	public List<NoticiaEntity> getNoticias() {
+	/*public List<NoticiaEntity> getNoticias() {
 		return noticias;
 	}
 
 
 	public void setNoticias(List<NoticiaEntity> noticias) {
 		this.noticias = noticias;
-	}
+	}*/
 	
 	
 	

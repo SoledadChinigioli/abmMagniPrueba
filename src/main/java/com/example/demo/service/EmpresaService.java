@@ -44,7 +44,7 @@ public class EmpresaService {
 					unDto.setLatitud(i.getLatitud());
 					unDto.setDomicilio(i.getDomicilio());
 					unDto.setEmail(i.getEmail());
-					unDto.setNoticias(i.getNoticias());
+					//unDto.setNoticias(i.getNoticias());
 					
 					
 					dtos.add(unDto);
@@ -81,7 +81,7 @@ public class EmpresaService {
 				unDto.setLatitud(entity.getLatitud());
 				unDto.setDomicilio(entity.getDomicilio());
 				unDto.setEmail(entity.getEmail());
-				unDto.setNoticias(entity.getNoticias());
+			//	unDto.setNoticias(entity.getNoticias());
 				
 				
 				
@@ -106,7 +106,7 @@ public class EmpresaService {
 			entity.setLatitud(dto.getLatitud());
 			entity.setDomicilio(dto.getDomicilio());
 			entity.setEmail(dto.getEmail());
-			entity.setNoticias(dto.getNoticias());
+		//	entity.setNoticias(dto.getNoticias());
 			
 			try {
 				entity = repository.save(entity);
@@ -140,7 +140,7 @@ public class EmpresaService {
 				entity.setLatitud(dto.getLatitud());
 				entity.setDomicilio(dto.getDomicilio());
 				entity.setEmail(dto.getEmail());
-				entity.setNoticias(dto.getNoticias());
+			//	entity.setNoticias(dto.getNoticias());
 				
 				
 				repository.save(entity);

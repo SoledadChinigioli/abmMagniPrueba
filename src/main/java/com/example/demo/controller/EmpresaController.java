@@ -20,7 +20,7 @@ import com.example.demo.service.EmpresaService;
 
 @RestController
 @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST,RequestMethod.DELETE,RequestMethod.PUT})
-@RequestMapping(path = "api/v1/empresa2")
+@RequestMapping(path = "api/v1/empresa")
 public class EmpresaController {
 	
 	private EmpresaService service;
